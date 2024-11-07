@@ -12,7 +12,8 @@ namespace TypingGame
             {
                 Console.WriteLine(c);
             }
-
+            QuoteFetcher fetcher = new QuoteFetcher();
+            fetcher.fetchQuote();
         }
     }
 }
