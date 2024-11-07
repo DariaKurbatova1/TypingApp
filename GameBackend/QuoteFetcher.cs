@@ -3,21 +3,11 @@ using System.IO;
 using System.Text.Json.Nodes;
 
 public class QuoteFetcher{
-    public QuoteFetcher(){
-        
-        
-
-    }
-    public JsonObject fetchQuote(){
+    //add singleton pattern implementation to quote fetcher
+    public JsonObject fetchQuotes(){
         try{
             StreamReader sr = new StreamReader("/Users/dariakurbatova/Documents/Coding Projects/TypingApp/quotes.json");
-            String jsonString = "";
-            String? line = sr.ReadLine();
-            jsonString += line;
-            while (line != null){
-                line = sr.ReadLine();
-                jsonString += line;
-            }
+            String jsonString = sr.ReadToEnd();
             sr.Close();
             JsonObject jsonObject = JsonNode.Parse(jsonString).AsObject();
             Console.WriteLine(jsonObject);
