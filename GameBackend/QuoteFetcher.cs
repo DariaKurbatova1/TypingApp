@@ -1,5 +1,6 @@
 namespace GameBackend;
 using System.IO;
+using System.Text.Json.Nodes;
 
 public class QuoteFetcher{
     public QuoteFetcher(){
@@ -7,19 +8,24 @@ public class QuoteFetcher{
         
 
     }
-    public void fetchQuote(){
+    public JsonObject fetchQuote(){
         try{
             StreamReader sr = new StreamReader("/Users/dariakurbatova/Documents/Coding Projects/TypingApp/quotes.json");
+            String jsonString = "";
             String? line = sr.ReadLine();
+            jsonString += line;
             while (line != null){
-                Console.WriteLine(line);
                 line = sr.ReadLine();
+                jsonString += line;
             }
             sr.Close();
-            Console.ReadLine();
+            JsonObject jsonObject = JsonNode.Parse(jsonString).AsObject();
+            Console.WriteLine(jsonObject);
+            return jsonObject;
         }
         catch (Exception e){
             Console.WriteLine("Exception: " + e.Message);
         }
+        return null;
     }
 }
