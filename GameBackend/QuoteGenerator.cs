@@ -14,25 +14,6 @@ public class QuoteGenerator{
 
     }
     public void generateQuotes(){
-        JsonObject json = fetcher.fetchQuotes();
-        var dict = JsonConvert.DeserializeObject<List<JsonQuote>>(json.ToString());
-        var asArray = dict.ToArray();
-        foreach (var item in asArray){
-            Console.WriteLine(item);
-        }
-        // foreach(var item in json){
-        //     Console.WriteLine(item.quote);
-        // }
-
-
-        // foreach (JsonObject quoteObject in json.OfType<JsonObject>()){
-        //     Console.WriteLine(quoteObject);
-        //     if (quoteObject.TryGetPropertyValue("quote", out JsonNode quoteText)){
-        //         quotes.Add(new Quote(quoteText.ToString()));
-        //         strings.Add(quoteText.ToString());
-        //         Console.WriteLine(quoteText.ToString());
-        //     }
-        // }
         
     }
     
