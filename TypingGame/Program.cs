@@ -7,6 +7,8 @@ namespace TypingGame
         static void Main()
         {
             Console.WriteLine("hello");
+            QuoteFetcher fetcher = new QuoteFetcher();
+            fetcher.fetchQuotes();
         }
     }
 }
