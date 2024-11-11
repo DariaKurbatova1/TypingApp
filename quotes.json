@@ -1,6 +1,5 @@
-{
-	"quotes": [
-
+[
+	
 {
        "quote":"Life isn’t about getting and having, it’s about giving and being.","author":"Kevin Kruse"},
 {
@@ -205,5 +204,5 @@
        "quote":"The only way to do great work is to love what you do.","author":"Steve Jobs"},
 {
        "quote":"If you can dream it, you can achieve it.","author":"Zig Ziglar"}
+
 ]
-}

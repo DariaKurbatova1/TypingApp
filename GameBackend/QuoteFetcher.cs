@@ -10,7 +10,7 @@ public class QuoteFetcher{
             String jsonString = sr.ReadToEnd();
             sr.Close();
             JsonObject jsonObject = JsonNode.Parse(jsonString).AsObject();
-            Console.WriteLine(jsonObject);
+            //Console.WriteLine(jsonObject);
             return jsonObject;
         }
         catch (Exception e){

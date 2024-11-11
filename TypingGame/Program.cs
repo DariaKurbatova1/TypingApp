@@ -12,8 +12,11 @@ namespace TypingGame
             {
                 Console.WriteLine(c);
             }
-            QuoteFetcher fetcher = new QuoteFetcher();
-            fetcher.fetchQuotes();
+            QuoteGenerator qg = new QuoteGenerator();
+            qg.generateQuotes();
+            foreach (String s in qg.strings){
+                Console.Write(s);
+            }
         }
     }
 }
