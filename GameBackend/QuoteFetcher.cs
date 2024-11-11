@@ -14,7 +14,6 @@ public class QuoteFetcher
         string jsonContent = File.ReadAllText(filePath);
         JsonQuote[] quotes = JsonConvert.DeserializeObject<JsonQuote[]>(jsonContent);
         JObject jsonData = JObject.FromObject(new { quotes });
-        Console.WriteLine(jsonData);
         return jsonData;
     }
 }

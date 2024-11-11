@@ -9,6 +9,8 @@ namespace TypingGame
             Console.WriteLine("hello");
             QuoteFetcher fetcher = new QuoteFetcher();
             fetcher.fetchQuotes();
+            QuoteGenerator generator = new QuoteGenerator(fetcher);
+            generator.generateQuotes();
         }
     }
 }
