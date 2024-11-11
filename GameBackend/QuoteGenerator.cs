@@ -23,7 +23,8 @@ public class QuoteGenerator{
         foreach(var item in quotesArray)
         {
             string text = item["Quote"].ToString();
-            Quote newQuote = new Quote(text);
+            string author = item["Author"].ToString();
+            Quote newQuote = new Quote(text, author);
             quotes.Add(newQuote);
         }
         foreach (var quote in quotes)
