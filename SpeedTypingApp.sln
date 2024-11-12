@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameBackend", "GameBackend\GameBackend.csproj", "{1353BC53-E0AD-4142-957D-265D6AB342AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypingGame", "TypingGame\TypingGame.csproj", "{B5F2AFCF-8EB9-4709-9739-F4288EC90580}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1353BC53-E0AD-4142-957D-265D6AB342AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1353BC53-E0AD-4142-957D-265D6AB342AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1353BC53-E0AD-4142-957D-265D6AB342AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1353BC53-E0AD-4142-957D-265D6AB342AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5F2AFCF-8EB9-4709-9739-F4288EC90580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F2AFCF-8EB9-4709-9739-F4288EC90580}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F2AFCF-8EB9-4709-9739-F4288EC90580}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F2AFCF-8EB9-4709-9739-F4288EC90580}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
