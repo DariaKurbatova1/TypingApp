@@ -17,10 +17,7 @@ namespace TypingGame
             Random rand = new Random();
             Quote selectedQuote = generator.quotes[rand.Next(generator.quotes.Count)];
 
-            //display quote to user
             Console.Clear();
-            Console.WriteLine("Type the following quote as accurately as you can...\n");
-            Console.WriteLine($"Quote: \"{selectedQuote.QuoteCharactersToString()}\"\n");
 
             //start game
             StartTypingChallenge(selectedQuote);
@@ -41,6 +38,7 @@ namespace TypingGame
                 Console.Clear();
                 Console.WriteLine("Start typing:");
                 Console.WriteLine("Your quote: " + correctQuote);
+                Console.WriteLine("Author: " + quote.Author);
                 Console.WriteLine("Your input:");
                 Console.WriteLine(new string(userInput));
 
@@ -65,7 +63,7 @@ namespace TypingGame
             double accuracy = ((double)correctCount / totalCharacters) * 100;
             Console.Clear();
             Console.WriteLine("Typing challenge is done!");
-            Console.WriteLine("Your accuracy: "+accuracy+"%");
+            Console.WriteLine("Your accuracy: "+Math.Round(accuracy, 2)+"%");
 
         }
     }
