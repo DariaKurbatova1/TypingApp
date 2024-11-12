@@ -29,16 +29,26 @@ namespace TypingGame
         {
             string correctQuote = quote.QuoteCharactersToString();
             int totalCharacters = correctQuote.Length;
+            int correctCount = 0;
 
             //create line of _ of the lenght of the quote
             char[] userInput = new char[totalCharacters];
             for (int i = 0; i < totalCharacters; i++)
                 userInput[i] = '_';
 
-            Console.WriteLine("Start typing:");
+            for( int i = 0; i< totalCharacters; i++)
+            {
+                Console.Clear();
+                Console.WriteLine("Start typing:");
+                Console.WriteLine("Your quote: " + correctQuote);
+                Console.WriteLine("Your input:");
+                Console.WriteLine(new string(userInput));
 
-            Console.WriteLine("Your input:");
-            Console.WriteLine(new string(userInput));
+                //check which key is pressed by user
+                var key = Console.ReadKey(intercept: true);
+
+            }
+
         }
     }
 }
