@@ -47,6 +47,14 @@ namespace TypingGame
                 //check which key is pressed by user
                 var key = Console.ReadKey(intercept: true);
 
+                //check if entered character is correct
+                if (key.KeyChar == correctQuote[i])
+                {
+                    userInput[i] = key.KeyChar;  
+                    correctCount++;           
+                }
+
+
             }
 
         }
