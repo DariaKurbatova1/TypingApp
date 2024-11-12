@@ -22,6 +22,23 @@ namespace TypingGame
             Console.WriteLine("Type the following quote as accurately as you can...\n");
             Console.WriteLine($"Quote: \"{selectedQuote.QuoteCharactersToString()}\"\n");
 
+            //start game
+            StartTypingChallenge(selectedQuote);
+        }
+        public static void StartTypingChallenge(Quote quote)
+        {
+            string correctQuote = quote.QuoteCharactersToString();
+            int totalCharacters = correctQuote.Length;
+
+            //create line of _ of the lenght of the quote
+            char[] userInput = new char[totalCharacters];
+            for (int i = 0; i < totalCharacters; i++)
+                userInput[i] = '_';
+
+            Console.WriteLine("Start typing:");
+
+            Console.WriteLine("Your input:");
+            Console.WriteLine(new string(userInput));
         }
     }
 }
