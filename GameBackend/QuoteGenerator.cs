@@ -27,10 +27,6 @@ public class QuoteGenerator{
             Quote newQuote = new Quote(text, author);
             quotes.Add(newQuote);
         }
-        foreach (var quote in quotes)
-        {
-            Console.WriteLine(new string(quote.QuoteCharacters.ToArray()));
-        }
 
     }
     

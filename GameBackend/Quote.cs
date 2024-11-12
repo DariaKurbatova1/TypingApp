@@ -8,4 +8,8 @@ public class Quote{
         Author = author;
 
     }
+    public string QuoteCharactersToString()
+    {
+        return new string(QuoteCharacters.ToArray());
+    }
 }
