@@ -58,8 +58,14 @@ namespace TypingGame
                 {
                     userInput[i] = key.KeyChar;
                 }
+                
 
             }
+            //show user's result
+            double accuracy = ((double)correctCount / totalCharacters) * 100;
+            Console.Clear();
+            Console.WriteLine("Typing challenge is done!");
+            Console.WriteLine("Your accuracy: "+accuracy+"%");
 
         }
     }
