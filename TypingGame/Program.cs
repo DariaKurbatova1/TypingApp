@@ -53,7 +53,11 @@ namespace TypingGame
                     userInput[i] = key.KeyChar;  
                     correctCount++;           
                 }
-
+                //if char is incorrect:
+                else
+                {
+                    userInput[i] = key.KeyChar;
+                }
 
             }
 
